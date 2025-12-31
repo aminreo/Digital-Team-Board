@@ -1,0 +1,16 @@
+#card{
+    background-color: bisque;
+    color: red;
+    padding: 10px;
+    margin: 10px;
+}
+
+#title{
+    color: ;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#bio{
+    font-size: smaller;
+}
