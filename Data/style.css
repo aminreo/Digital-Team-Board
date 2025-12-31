@@ -1,6 +1,6 @@
 .card{
-    background-color: bisque;
-    color: red;
+    background-color: #ffe4c4;
+    color: #c48400;
     padding: 10px;
     margin: 10px;
     transition: transform 0.3s ease;
@@ -17,4 +17,16 @@
 
 .bio{
     font-size: smaller;
+}
+
+h1{
+    color: #402e32;
+}
+
+body{
+    background-color: #dfe0df;
+}
+
+#search-bar{
+    font-size: 10px;
 }

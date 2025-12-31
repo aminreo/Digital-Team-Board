@@ -6,7 +6,6 @@ teamMembers[2] = { title: "Eddy Voe", bio: "IT Guy, fixes everyone tech crisis i
 
 
 const tc = document.getElementById('team-container');
-// tc.style.color = "red";
 
 teamMembers.forEach(myFn);
 
@@ -16,4 +15,12 @@ function myFn(item) {
             <div class="title">${item.title}</div>
             <div class="bio">${item.bio}</div>
         </div>` ;
+}
+
+const sb=document.getElementById('search-bar').addEventListener('input',(e)=>sbFn(e))
+
+function sbFn(e){
+    console.log('ok')
+    const term = e.target.value.toLowerCase();
+    // todo
 }
