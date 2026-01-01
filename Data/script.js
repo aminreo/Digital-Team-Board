@@ -3,6 +3,9 @@ const teamMembers = [];
 teamMembers[0] = { title: "Joe Poe", bio: "Likes to cycle daily, always helpful to others, always on time!", img: "joe.jpg" };
 teamMembers[1] = { title: "Jessica Loe", bio: "Enthusiastic guitar player, our company parties DJ!", img: "jessica.jpg" };
 teamMembers[2] = { title: "Eddy Voe", bio: "IT Guy, fixes everyone tech crisis in matter of minutes!", img: "eddy.jpg" };
+teamMembers[3] = { title: "Oliver Boe", bio: "Often goes on hikes and likes being in nature", img: "oliver.jpg" };
+teamMembers[4] = { title: "Sam Lou", bio: "Goes to cooking classes, always happy to learn new tasty dishes!", img: "sam.jpg" };
+teamMembers[5] = { title: "Dan Evy", bio: "Likes videogames and LAN parties", img: "dan.jpg" };
 
 
 const tc = document.getElementById('team-container');
@@ -12,7 +15,7 @@ teamMembers.forEach(addCardHTML);
 function addCardHTML(item) {
     tc.innerHTML +=
         ` <div class="card">
-            <img src="Data/Img/${item.img}" width="150" height="100"> 
+            <img src="Data/Img/${item.img}"> 
             <div class="title">${item.title}</div>
             <div class="bio">${item.bio}</div>
         </div>` ;

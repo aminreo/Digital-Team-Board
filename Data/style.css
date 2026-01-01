@@ -40,4 +40,13 @@
     }
     img{
         border-radius:  5%;
+        width: 70%;
+        height: auto;
+    }
+
+    #team-container{
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+
     }
