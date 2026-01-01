@@ -7,9 +7,9 @@ teamMembers[2] = { title: "Eddy Voe", bio: "IT Guy, fixes everyone tech crisis i
 
 const tc = document.getElementById('team-container');
 
-teamMembers.forEach(myFn);
+teamMembers.forEach(addCardHTML);
 
-function myFn(item) {
+function addCardHTML(item) {
     tc.innerHTML +=
         ` <div class="card">
             <div class="title">${item.title}</div>
@@ -24,7 +24,7 @@ function sbFn(e) {
     const term = e.target.value.toLowerCase();
     tc.innerHTML = '';
     if (term == '') {
-        teamMembers.forEach(myFn);
+        teamMembers.forEach(addCardHTML);
         return;
     }
     // todo
@@ -33,13 +33,10 @@ function sbFn(e) {
 
         if (current_card.title.toLowerCase().indexOf(term) > -1 ||
             current_card.bio.toLowerCase().indexOf(term) > -1) {
-            tc.innerHTML +=
-                ` <div class="card">
-            <div class="title">${current_card.title}</div>
-            <div class="bio">${current_card.bio}</div>
-        </div>` ;
-        } else {
-
-        }
+            addCardHTML(current_card);
+        } 
+    }
+    if (tc.innerHTML == ''){
+        tc.innerHTML+= `<div style="font-style: italic;padding: 10px;">No team members found...<br>maybe you're the first one with that hobby? :)</div>`;
     }
 }
