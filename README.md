@@ -14,3 +14,7 @@ A web-based **Employee Spotlight** directory
 * Photo by Creation Hill from Pexels: https://www.pexels.com/photo/man-in-red-jacket-1681010/
 * Photo by Christina Morillo: https://www.pexels.com/photo/woman-smiling-at-the-camera-1181686/
 * Photo by Jeffrey Reed from Pexels: https://www.pexels.com/photo/man-wearing-plaid-dress-shirt-and-black-pants-sitting-near-brown-brick-wall-769746/
+
+## Todo
+* How to use instructions/tool
+* Screenshots
